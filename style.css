@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #695cfe;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.container h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 4rem;
+}
