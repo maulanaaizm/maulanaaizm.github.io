@@ -4,11 +4,80 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Latihan</title>
+    <link rel="icon" href="logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <h1>Hello, world!</h1>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Lana<span>Bae</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="container">
+        <div class="gambar">
+          <img src="img/maulana.jpg" alt="ini gambar" />
+        </div>
+        <div class="header">
+          <h1>LanaBae LanaBae</h1>
+          <p>Front End Development</p>
+        </div>
+      </div>
     </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#939393"
+        fill-opacity="1"
+        d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum animi ipsa laudantium! Ullam magnam architecto magni esse! Excepturi nostrum natus omnis facere fuga sequi tenetur a repellendus doloremque, laudantium sapiente.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quaerat, quisquam inventore accusamus tenetur facilis.</p>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#939393"
+        fill-opacity="1"
+        d="M0,64L60,80C120,96,240,128,360,122.7C480,117,600,75,720,69.3C840,64,960,96,1080,96C1200,96,1320,64,1380,48L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+
+    <footer>
+      <section>
+        <p>&copy;copyright 2023. Create by <a href="#">LanaBae</a></p>
+      </section>
+    </footer>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
