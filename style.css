@@ -1,6 +1,7 @@
 :root {
-  --primary-color: #695cfe;
-  --text-color: #fff;
+  --primary-color: #64ccc5;
+  --text-color: #053b50;
+  --bg: #eee;
 }
 html {
   scroll-behavior: smooth;
@@ -17,7 +18,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #000;
+  color: var(--text-color);
 }
 
 .navbar {
@@ -37,12 +38,12 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: var(--text-color);
-  font-style: italic;
   display: flex;
 }
 
-.navbar .navbar-logo span {
-  color: #4e4b6b;
+.navbar .navbar-logo img {
+  margin-right: 8px;
+  width: 50px;
 }
 
 .navbar .navbar-nav a {
@@ -53,14 +54,14 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: #4e4b6b;
+  color: #eee;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-top: 0.2rem;
-  border-bottom: 0.1rem solid #4e4b6b;
+  border-bottom: 0.1rem solid #eee;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -72,17 +73,17 @@ body {
 .navbar .navbar-extra a {
   color: var(--text-color);
   margin: 0 0.5rem;
+  transition: 0.3s;
 }
 
 .navbar .navbar-extra a:hover {
-  color: #4e4b6b;
+  color: #eee;
 }
 
 #hamburger-menu {
   display: none;
 }
 
-/* hero */
 .home {
   display: flex;
   text-align: center;
@@ -114,7 +115,6 @@ body {
   font-weight: 400;
 }
 
-/* About */
 .about {
   margin-top: -8px;
   padding: 8rem;
@@ -159,7 +159,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/*  */
 @media (max-width: 768px) {
   html {
     font-size: 65%;
@@ -172,9 +171,13 @@ footer a:hover {
     top: 100%;
     right: -100%;
     background-color: var(--primary-color);
-    width: 40%;
+    width: 80%;
     height: 100vh;
     transition: 0.3s;
+  }
+
+  .navbar .navbar-logo img {
+    width: 30px;
   }
 
   .navbar .navbar-nav.active {
@@ -206,6 +209,11 @@ footer a:hover {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .navbar .navbar-logo img {
+    width: 25px;
+    height: 25px;
   }
 
   .container img {
