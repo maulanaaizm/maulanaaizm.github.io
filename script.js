@@ -1,16 +1,18 @@
-// Toggle class active hamburger menu
-const navbarNav = document.querySelector(".navbar-nav");
-// ketika hamburger menu di klik
-document.querySelector("#hamburger-menu").onclick = (e) => {
-  navbarNav.classList.toggle("active");
-  e.preventDefault();
-};
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#nav-menu");
 
-//
-const hm = document.querySelector("#hamburger-menu");
-
-document.addEventListener("click", function (e) {
-  if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
-  }
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("hamburger-active");
+  navMenu.classList.toggle("hidden");
 });
+
+window.onscroll = function () {
+  const header = document.querySelector("header");
+  const fixedNav = header.offsetTop;
+
+  if (window.pageYOffset > fixedNav) {
+    header.classList.add("navbar-fixed");
+  } else {
+    header.classList.remove("navbar-fixed");
+  }
+};
